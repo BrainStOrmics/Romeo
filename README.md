@@ -30,4 +30,4 @@ The [conep tutorials](https://github.com/BrainStOrmics/Conep/tree/main/tutorials
 For questions about the code and tutorial, please contact Qianhua ZHU, zhuqianhua@genomics.cn.
 
 # Citation
-If corep is useful for your research, please consider citing.
+If conep is useful for your research, please consider citing.
