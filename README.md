@@ -14,7 +14,7 @@ pip install git+https://github.com/BrainStOrmics/Conep.git
 
 # Usage
 
-The [conep tutorials](https://github.com/BrainStOrmics/Conep/tree/main/tutorials/conep_tutorials.ipynb) provides a quick-start guide based pbmc3k dataset.
+The [conep tutorials](https://github.com/BrainStOrmics/Conep/tree/main/tutorials/conep_tutorials.ipynb) provides a quick-start guide based on the pbmc3k dataset.
 
 # Enviroments
 - python>=3.8.0
