@@ -4,19 +4,17 @@
 
 Cell type classification is the most import step for the analysis of single-cell and spatial transcriptome data, conep (**con**sistency between gene **e**xpression and cell **p**ositive rate) provides an accurate and stable marker gene identification. Conep is fast and better at finding some biologically meaningful marker genes.
 
-![image](https://github.com/zhuqianhua/Conep/tree/main/assets/workflow_of_conep.jpg)
-
-[Quick Example](https://github.com/zhuqianhua/Conep/tree/main/tutorials/conep_tutorials.ipynb) - [Citation](https://github.com/zhuqianhua/Conep)
+![image](assets/workflow_of_conep.jpg)
 
 # Installation
 
 ```
-pip install git+https://github.com/zhuqianhua/Conep.git
+pip install git+https://github.com/BrainStOrmics/Conep.git
 ```
 
 # Usage
 
-The [conep tutorials](https://github.com/zhuqianhua/Conep/tree/main/tutorials/conep_tutorials.ipynb) provides a quick-start guide based pbmc3k dataset.
+The [conep tutorials](https://github.com/BrainStOrmics/Conep/tree/main/tutorials/conep_tutorials.ipynb) provides a quick-start guide based pbmc3k dataset.
 
 # Enviroments
 - python>=3.8.0
