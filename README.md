@@ -2,19 +2,19 @@
 [![python~=3.8](https://img.shields.io/badge/python-3.8-brightgreen)](https://www.python.org/)
 [![License: GPL3.0](https://img.shields.io/badge/License-GPL3.0-yellow)](https://opensource.org/license/gpl-3-0/)
 
-Cell type classification is a crucial stage in single-cell and spatial transcriptome analysis. Conep, which stands for **con**sistency between gene **e**xpression levels and cell **p**ositivity rates, is a valuable tool for precisely and reliably identifying marker genes. Its efficiency in identifying biologically significant marker genes quickly makes it an indispensable asset for enhancing our comprehension of cellular diversity and function.
+Cell type classification is a crucial stage in single-cell and spatial transcriptome analysis. Romeo, which stands for **ro**bust **m**arker identifier with **e**xpression levels and positive rati**o**, is a valuable tool for precisely and reliably identifying marker genes. Its efficiency in identifying biologically significant marker genes quickly makes it an indispensable asset for enhancing our comprehension of cellular diversity and function.
 
-![image](assets/workflow_of_conep.jpg)
+![image](assets/workflow_of_romeo.jpg)
 
 # Installation
 
 ```
-pip install git+https://github.com/BrainStOrmics/Conep.git
+pip install git+https://github.com/BrainStOrmics/Romeo.git
 ```
 
 # Usage
 
-The [conep tutorials](https://github.com/BrainStOrmics/Conep/tree/main/tutorials/conep_tutorials.ipynb) provides a quick-start guide based on the pbmc3k dataset.
+The [Romeo tutorials](https://github.com/BrainStOrmics/Romeo/tree/main/tutorials/Romeo_tutorials.ipynb) provides a quick-start guide based on the pbmc3k dataset.
 
 # Enviroments
 - python>=3.8.0
@@ -30,4 +30,4 @@ The [conep tutorials](https://github.com/BrainStOrmics/Conep/tree/main/tutorials
 For questions about the code and tutorial, please contact Qianhua ZHU, zhuqianhua@genomics.cn.
 
 # Citation
-If conep is useful for your research, please consider citing.
+If Romeo is useful for your research, please consider citing.

@@ -7,12 +7,12 @@ from typing import Dict, Any
 
 from .utile import find_markers, adata_add_metadata
 
-def conep(
+def romeo(
     adata,
     groupby: str = 'group',
     key_layer: str = None,
     normalize: bool = True,
-    key_added: str = 'conep',
+    key_added: str = 'romeo',
     merge_mode: str = 'outer',
     angular_consistency: float = 0.1,
     min_positivity_rate: float = 0.0
@@ -29,7 +29,7 @@ def conep(
             for containing multiple key_layer for each slice. If None, the adata.X 
             will be used. Defaults to None.
         normalize: Normalize the count matrix by sc.pp.log1p(). Defaults to True.
-        key_added: The key in `adata.uns` where information is saved. Defaults to conep.
+        key_added: The key in `adata.uns` where information is saved. Defaults to romeo.
         merge_mode: The merge mode for multiple slices, intersection (inner) or union (outer).
             Defaults to outer.
         angular_consistency: The weight of angular consistency. Defaults to 0.1.
@@ -43,17 +43,17 @@ def conep(
     Examples
     --------
     >>> import scanpy as sc
-    >>> import conep
+    >>> import romeo
     >>> adata_counts = sc.datasets.pbmc3k()
     >>> adata = sc.datasets.pbmc3k_processed()
     >>> adata.layers['counts'] = adata_counts[adata.obs_names, adata.var_names].X.copy()
-    >>> conep.conep(adata, 'louvain', key_layer='counts')
-    >>> conep.conep_markers_dotplot(adata, groupby='louvain', dotplot_kwargs={'cmap': 'Spectral_r'})
+    >>> romeo.romeo(adata, 'louvain', key_layer='counts')
+    >>> romeo.romeo_markers_dotplot(adata, groupby='louvain', dotplot_kwargs={'cmap': 'Spectral_r'})
     """
     if type(adata) != list:
         adata = [adata]
 
-    pd_conep_markers = find_markers(
+    pd_romeo_markers = find_markers(
         adata=adata,
         groupby=groupby,
         key_layer=key_layer,
@@ -65,11 +65,11 @@ def conep(
 
     adata_add_metadata(
         adata=adata,
-        markers=pd_conep_markers,
+        markers=pd_romeo_markers,
         key_added=key_added,
     )
 
-def conep_markers(
+def romeo_markers(
     adata,
     groupby: str = 'annotation',
     key_added: str = 'conep',
@@ -117,7 +117,7 @@ def conep_markers(
         logging.error(f"The {key_added} does not exists in .uns, process conep first.")
         sys.exit(-1)
 
-def conep_markers_dotplot(
+def romeo_markers_dotplot(
     adata,
     groupby: str = 'group',
     key_added: str = 'conep',
