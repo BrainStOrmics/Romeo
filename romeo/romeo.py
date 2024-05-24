@@ -72,18 +72,18 @@ def romeo(
 def romeo_markers(
     adata,
     groupby: str = 'annotation',
-    key_added: str = 'conep',
+    key_added: str = 'romeo',
     top: int = 3,
     return_marker_file: str = None,
 ) -> Dict[Any, str]:
     """
-    Get the top n genes for each group based on the conep score.
+    Get the top n genes for each group based on the romeo score.
 
     Args:
         adata: Annotated data matrix.
         groupby: The key of cell groups in adata.obs. Defaults to annotation.
-        key_added: The key in `adata.uns` where information is saved. Defaults to conep.
-        top: The `top` genes with the most lowest conep score in each group. Defaults to 3.
+        key_added: The key in `adata.uns` where information is saved. Defaults to romeo.
+        top: The `top` genes with the most lowest romeo score in each group. Defaults to 3.
         return_marker_file: The file to save marker gene list. Defaults to None.
 
     Returns:
@@ -120,7 +120,7 @@ def romeo_markers(
 def romeo_markers_dotplot(
     adata,
     groupby: str = 'group',
-    key_added: str = 'conep',
+    key_added: str = 'romeo',
     top: int = 3,
     return_marker_file: str = None,
     return_fig_file: str = None,
@@ -132,8 +132,8 @@ def romeo_markers_dotplot(
     Args:
         adata: Annotated data matrix.
         groupby: The key of cell groups in adata.obs. Defaults to group.
-        key_added: The key in `adata.uns` where information is saved. Defaults to conep.
-        top: The `top` genes with the most highest conep score in each group. Defaults to 3.
+        key_added: The key in `adata.uns` where information is saved. Defaults to romeo.
+        top: The `top` genes with the most highest romeo score in each group. Defaults to 3.
         return_marker_file: The file to save marker gene list. Defaults to None.
         return_fig_file: The file to save dotplot figure. Defaults to None.
         dotplot_kwargs: Other parameters for sc.pl.dotplot. Defaults to {}.
