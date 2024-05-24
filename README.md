@@ -14,7 +14,7 @@ pip install git+https://github.com/BrainStOrmics/Romeo.git
 
 # Usage
 
-The [Romeo tutorials](https://github.com/BrainStOrmics/Romeo/tree/main/tutorials/Romeo_tutorials.ipynb) provides a quick-start guide based on the pbmc3k dataset.
+The [Romeo tutorials](https://github.com/BrainStOrmics/Romeo/tree/main/tutorials/romeo_tutorials.ipynb) provides a quick-start guide based on the pbmc3k dataset.
 
 # Enviroments
 - python>=3.8.0
