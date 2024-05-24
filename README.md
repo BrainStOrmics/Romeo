@@ -2,7 +2,7 @@
 [![python~=3.8](https://img.shields.io/badge/python-3.8-brightgreen)](https://www.python.org/)
 [![License: GPL3.0](https://img.shields.io/badge/License-GPL3.0-yellow)](https://opensource.org/license/gpl-3-0/)
 
-Cell type classification is a crucial stage in single-cell and spatial transcriptome analysis. Romeo, which stands for **ro**bust **m**arker identifier with **e**xpression levels and positive rati**o**, is a valuable tool for precisely and reliably identifying marker genes. Its efficiency in identifying biologically significant marker genes quickly makes it an indispensable asset for enhancing our comprehension of cellular diversity and function.
+Cell type classification is a crucial stage in single-cell and spatial transcriptome analysis. Romeo, which stands for **RO**bust **M**arker identifier with **E**xpression levels and positive rati**O**, is a valuable tool for precisely and reliably identifying marker genes. Its efficiency in identifying biologically significant marker genes quickly makes it an indispensable asset for enhancing our comprehension of cellular diversity and function.
 
 ![image](assets/workflow_of_romeo.png)
 
