@@ -141,7 +141,7 @@ def romeo_markers_dotplot(
     Returns:
         If return_fig_file is not None, return a dotplot figure.
     """
-    var_names = conep_markers(
+    var_names = romeo_markers(
         adata=adata,
         groupby=groupby,
         key_added=key_added,
