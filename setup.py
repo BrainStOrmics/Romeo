@@ -13,7 +13,7 @@ with open("README.md", "r", encoding="UTF-8") as fh:
 setup(
     name="romeo",
     version="1.0",
-    python_requires=">=3.9",
+    python_requires=">=3.8",
     install_requires=read_requirements("requirements.txt"),
     packages=["romeo"],
     author="Qianhua Zhu, Hailin Pan",
