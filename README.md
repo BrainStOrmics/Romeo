@@ -15,6 +15,19 @@ pip install git+https://github.com/BrainStOrmics/Romeo.git
 # Usage
 
 The [Romeo tutorials](https://github.com/BrainStOrmics/Romeo/tree/main/tutorials/romeo_tutorials.ipynb) provides a quick-start guide based on the pbmc3k dataset.
+## Options
+
+options | description
+---- | ----
+adata | Annotated data matrix or a list containing multiple anndata matrix.
+groupby | The key of cell groups in adata.obs or a list containing multiple groupbys for each slice. Defaults to group.
+key_layer | The key from `adata.layers` whose value will be used or a list for containing multiple key_layer for each slice. If None, the adata.X will be used. Defaults to None.
+normalize | Normalize the count matrix by sc.pp.log1p(). Defaults to True.
+key_added | The key in `adata.uns` where information is saved. Defaults to romeo.
+merge_mode | The merge mode for multiple slices, intersection (inner) or union (outer). Defaults to outer.
+angular_consistency | The weight of angular consistency. Defaults to 0.1.
+min_positivity_rate | The minimum cell positive ratio in each group. Defaults to 0.0.
+
 
 # Enviroments
 - python>=3.8.0
